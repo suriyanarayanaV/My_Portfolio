@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import { getDownloadURL, ref } from "firebase/storage";
-import styled from "styled-components";
+import { Body } from "./AppStyled";
 import { BrowserRouter as Router } from "react-router-dom";
 import { darkTheme, lightTheme, OverAllWrapper } from "./utils/Themes";
 import Navbar from "./components/Navbar/Navbar";
@@ -23,14 +23,9 @@ function App() {
   useEffect(() => {
     getDownloadURL(ref(storage, "SURIYANARAYANA_CV.pdf")).then((url) => {
       setResume(url);
-      console.log(url);
     });
   }, []);
-  const Body = styled.div`
-    background-color: ${({ theme }) => theme.bg};
-    width: 100%;
-    overflow-x: hidden;
-  `;
+
   return (
     <ThemeProvider theme={lightTheme}>
       <Router>

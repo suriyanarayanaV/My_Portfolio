@@ -13,7 +13,7 @@ import {
   SkillImage,
 } from "./SkillsStyled";
 import { skills } from "../../const/data";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import Tooltip from "@mui/material/Tooltip";
 
 const Skills = () => {
@@ -25,10 +25,10 @@ const Skills = () => {
           Here are some of my skills on which I have been working on for the
           past 2 years.
         </Desc>
-        <Fade right duration={2000}>
+        <Fade direction={"right"} duration={2000}>
           <Subtitle>Full Stack Development</Subtitle>
         </Fade>
-        <Fade left duration={2000}>
+        <Fade direction={"left"} duration={2000}>
           <SkillsContainer>
             <Skill>
               <SkillList>

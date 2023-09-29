@@ -9,11 +9,11 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 import { projects } from "../../const/data";
+import { Fade } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <ProjectsContainer id="projects">
@@ -57,24 +57,27 @@ const Projects = () => {
                 </Typography>
 
                 <CardContent style={{ display: "flex", flexWrap: "wrap" }}>
-                  {project.techs.map((tech) => (
-                    <Typography
-                      key={tech}
-                      variant="span"
-                      component="span"
-                      style={{
-                        fontSize: "12px",
-                        fontFamily: '"Poppins", sans-serif',
-                        fontWeight: "450",
-                        backgroundColor: "#b778c3",
-                        borderRadius: "10px",
-                        margin: "0 10px 5px 0",
-                        padding: "2px 8px",
-                      }}
-                    >
-                      {tech}
-                    </Typography>
-                  ))}
+                  <Fade cascade>
+                    {project.techs.map((tech) => (
+                      <Typography
+                        key={tech}
+                        variant="span"
+                        component="span"
+                        style={{
+                          display: "block",
+                          fontSize: "12px",
+                          fontFamily: '"Poppins", sans-serif',
+                          fontWeight: "450",
+                          backgroundColor: "#b778c3",
+                          borderRadius: "10px",
+                          margin: "0 10px 10px 0",
+                          padding: "2px 8px",
+                        }}
+                      >
+                        {tech}
+                      </Typography>
+                    ))}
+                  </Fade>
                 </CardContent>
 
                 <Typography

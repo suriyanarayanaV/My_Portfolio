@@ -8,8 +8,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { GlowButton } from "../commons/Button/GlowButton";
 
 const WorkIcon = () => {

@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import DraftsIcon from "@mui/icons-material/Drafts";
 import {
-  Button,
   ContactFormWrapper,
   Form,
   FormTitle,
@@ -11,7 +10,6 @@ import {
 } from "./ContactStyled";
 import { Container, Desc, Title, Wrapper } from "../SkillsSection/SkillsStyled";
 import RoundedButton from "../commons/Button/RoundedButton";
-import { Alert } from "@mui/material";
 
 const Contact = (props) => {
   const form = useRef();

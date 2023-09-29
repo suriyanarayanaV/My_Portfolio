@@ -17,7 +17,7 @@ import {
 } from "./EducationStyled";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Education.css";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 import { educations } from "../../const/data";
 import { useState } from "react";
@@ -30,7 +30,7 @@ const Education = () => {
       <Wrapper>
         <Title>Education</Title>
         <Desc>My Educational Milestone And Qualifications</Desc>
-        <Fade bottom duration={2000}>
+        <Fade direction={"up"} duration={2000}>
           <Window>
             <WindowNav>
               {educations.map((education) => (
