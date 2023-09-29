@@ -1,0 +1,19 @@
+.title {
+  color: black;
+}
+.subtitle {
+  font-size: smaller;
+  font-weight: 400;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.skills {
+  margin: 10px 10px 0 0;
+  word-spacing: 10px;
+  color: black;
+  font-weight: 600;
+  font-size: small;
+}
