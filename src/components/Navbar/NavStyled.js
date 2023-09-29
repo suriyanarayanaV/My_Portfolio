@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const Nav = styled.div`
   background-color: ${({ theme }) => theme.card};
@@ -25,7 +24,7 @@ export const NavbarContainer = styled.div`
   padding: 0 24px;
   max-width: 1200px;
 `;
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.a`
   width: 80%;
   padding: 0 6px;
   display: flex;

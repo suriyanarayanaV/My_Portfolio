@@ -6,9 +6,10 @@ const Button = styled.button`
   border: none;
   border-radius: 10rem;
   cursor: pointer;
-  color: #fff;
+  color: ${({ theme }) => theme.text_secondary};
   text-transform: uppercase;
   font-size: 1.5rem;
+  font-weight: bold;
   letter-spacing: 0.15rem;
   transition: all 0.3s;
   position: relative;

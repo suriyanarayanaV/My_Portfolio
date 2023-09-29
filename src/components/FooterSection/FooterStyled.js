@@ -5,7 +5,7 @@ export const FooterContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 75px 30px;
+  padding: 85px 30px;
   margin-top: -55px;
   @media (max-width: 960px) {
     padding: 86px 16px;
@@ -31,6 +31,7 @@ export const FooterWrapper = styled.footer`
 
 export const Logo = styled.h1`
   font-weight: 600;
+  margin-top: 40px;
   font-size: 30px;
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 640px) {

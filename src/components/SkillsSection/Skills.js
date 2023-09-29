@@ -34,7 +34,7 @@ const Skills = () => {
               <SkillList>
                 {skills.map((skill, i) => (
                   <SkillItem key={i}>
-                    <Tooltip arrow title={skill.name}>
+                    <Tooltip enterTouchDelay={0} arrow title={skill.name}>
                       <SkillImage src={skill.image} />
                     </Tooltip>
                   </SkillItem>

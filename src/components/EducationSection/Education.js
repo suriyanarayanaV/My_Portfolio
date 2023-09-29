@@ -27,9 +27,9 @@ const Education = () => {
   return (
     <EducationContainer id="education">
       <Wrapper>
-        <Title>Education</Title>
-        <Desc>My Educational Milestone And Qualifications</Desc>
         <Fade direction={"up"} duration={2000}>
+          <Title>Education</Title>
+          <Desc>My Educational Milestone And Qualifications</Desc>
           <Window>
             <WindowNav>
               {educations.map((education) => (

@@ -50,7 +50,7 @@ const Contact = (props) => {
           </FormTitle>
           <Form ref={form} onSubmit={sendEmail}>
             <Input
-              placeholder="Your Name"
+              placeholder="Name"
               type="text"
               name="user_name"
               required
@@ -58,14 +58,14 @@ const Contact = (props) => {
               maxLength="25"
             />
             <Input
-              placeholder="Your Email"
+              placeholder="Email"
               type="email"
               name="user_email"
               required
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             />
             <TextArea
-              placeholder="Your Message"
+              placeholder="Message"
               name="message"
               required
               minLength="5"
