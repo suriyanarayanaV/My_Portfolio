@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import { getDownloadURL, ref } from "firebase/storage";
 import { Body } from "./AppStyled";
 import { BrowserRouter as Router } from "react-router-dom";
-import { darkTheme, lightTheme, OverAllWrapper } from "./utils/Themes";
+import { lightTheme, OverAllWrapper } from "./utils/Themes";
 import Navbar from "./components/Navbar/Navbar";
 import AboutSection from "./components/AboutSection/AboutSection";
 import Skills from "./components/SkillsSection/Skills";
