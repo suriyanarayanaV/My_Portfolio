@@ -201,6 +201,24 @@ export const experiences = [
 
 export const projects = [
   {
+    title: "Task Management Application",
+    desc: `Stask is a sophisticated task management application designed for seamless collaboration and efficient project execution. Built using a powerful tech stack including React, Next.js, Node.js, Express, MongoDB, Firebase, and Material-UI, this application redefines the way teams organize and accomplish tasks.`,
+    img: "",
+    techs: [
+      "React",
+      "Next JS",
+      "Node JS",
+      "Express JS",
+      "MUI",
+      "Mongo DB",
+      "JWT",
+      "FireBase",
+      "VS Code",
+    ],
+    demo: "https://stask-sapp.netlify.app/",
+    git: "",
+  },
+  {
     title: "Automation Project",
     desc: `Developed Multiple Impactful automation tools using React with Redux and Next JS, and Node JS with Express JS, Revolutionizing manual tasks.
     Achieved streamlined workflows, significant time Savings, and enhanced accuracy`,

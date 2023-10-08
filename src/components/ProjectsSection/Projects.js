@@ -89,7 +89,16 @@ const Projects = () => {
                 </Typography>
               </CardContent>
               <CardActions style={{ alignSelf: "flex-end" }}>
-                {project.demo && <Button size="small">View Demo</Button>}
+                {project.demo && (
+                  <Button size="large">
+                    <a
+                      href={project.demo}
+                      style={{ textDecoration: "none", fontSize: "18px" }}
+                    >
+                      View App
+                    </a>
+                  </Button>
+                )}
                 {project.git && <Button size="small">Source Code</Button>}
               </CardActions>
             </Card>
