@@ -86,7 +86,10 @@ const Projects = () => {
                 <Typography
                   variant="body2"
                   color="#F2F3F4"
-                  style={{ fontFamily: '"Poppins", sans-serif' }}
+                  style={{
+                    fontFamily: '"Poppins", sans-serif',
+                    textAlign: "justify",
+                  }}
                 >
                   {project.desc}
                 </Typography>
