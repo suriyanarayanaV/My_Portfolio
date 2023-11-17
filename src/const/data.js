@@ -230,7 +230,7 @@ export const projects = [
     techs: ["React", "React Native", "Node JS", "Express JS", "VS Code"],
     demo: "",
     git: "",
-    video: require("../videos/Shealth360DemoVideo.mp4"),
+    video:"https://firebasestorage.googleapis.com/v0/b/portfolio-503c4.appspot.com/o/Shealth360Docs%2FVideos%2FScreen_Recording_20231114_002027_shealth360_720x1600.mp4?alt=media&token=a28e66f1-07c4-40a0-9bd8-63cc5d77db61" ,
     getApp: "hfj",
   },
   {
