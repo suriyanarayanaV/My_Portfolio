@@ -5,7 +5,7 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   position: relative;
   padding: 80px 30px;
-  margin-top: -70px;
+  margin-top: -115px;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
@@ -37,7 +37,7 @@ export const Title = styled.div`
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
-    margin-top: 12px;
+    // margin-top: 12px;
     font-size: 32px;
   }
 `;

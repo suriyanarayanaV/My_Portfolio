@@ -11,10 +11,12 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
 import { projects } from "../../const/data";
 import { Fade } from "react-awesome-reveal";
+import VideoPlayer from "../videoComponent/VideoPlayer";
 const Projects = () => {
+  const [showVidePlayer, setShowVidePlayer] = React.useState(false);
+  const [video, setVideo] = React.useState("");
   return (
     <ProjectsContainer id="projects">
       <Wrapper>
@@ -99,10 +101,39 @@ const Projects = () => {
                     </a>
                   </Button>
                 )}
+                {project.video && (
+                  <Button
+                    size="large"
+                    onClick={() => {
+                      setVideo(project.video);
+                      setShowVidePlayer(true);
+                    }}
+                  >
+                    View App
+                  </Button>
+                )}
+                {project.getApp && (
+                  <Button size="large">
+                    <a
+                      href={project.getApp}
+                      style={{ textDecoration: "none", fontSize: "18px" }}
+                    >
+                      Get App
+                    </a>
+                  </Button>
+                )}
                 {project.git && <Button size="small">Source Code</Button>}
               </CardActions>
             </Card>
           ))}
+          {showVidePlayer && (
+            <VideoPlayer
+              hide={() => {
+                setShowVidePlayer(false);
+              }}
+              src={video}
+            />
+          )}
         </Body>
       </Wrapper>
     </ProjectsContainer>

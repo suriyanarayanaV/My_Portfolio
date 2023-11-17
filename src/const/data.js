@@ -114,7 +114,7 @@ export const educations = [
         I am proud to have earned my Mechanical Engineering degree from PSNA
         College of Engineering and Technology, where I dedicated myself to the
         pursuit of knowledge and innovation. With a stellar CGPA of{" "}
-        <strong>8.41</strong> , My journey began with a solid foundation in
+        <strong>8.47</strong> , My journey began with a solid foundation in
         Mechanical Engineering, graduating with distinction. However, my passion
         for technology led me to pivot into the dynamic world of Information
         Technology. Today, I proudly stand as an IT professional, leveraging my
@@ -222,6 +222,16 @@ export const projects = [
     ],
     demo: "https://stask-sapp.netlify.app/",
     git: "",
+  },
+  {
+    title: "Health Habitat and Tracker",
+    desc: `Shealth 360 is a sophisticated task management application designed for seamless collaboration and efficient project execution. Built using a powerful tech stack including React, Next.js, Node.js, Express, MongoDB, Firebase, and Material-UI, this application redefines the way teams organize and accomplish tasks.`,
+    img: "",
+    techs: ["React", "React Native", "Node JS", "Express JS", "VS Code"],
+    demo: "",
+    git: "",
+    video: require("../videos/Shealth360DemoVideo.mp4"),
+    getApp: "hfj",
   },
   {
     title: "Automation Project",

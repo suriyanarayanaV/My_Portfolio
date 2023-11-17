@@ -1,0 +1,59 @@
+.videoModal {
+  position: absolute;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  height: 15%;
+}
+
+.cameraHole {
+  position: absolute;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border: 1.7px solid rgba(255, 255, 255, 0.779);
+  border-radius: 50%;
+}
+
+.videoPlayerModal {
+  padding: 15px 2px 20px 2px;
+  border: 3px solid white;
+  border-radius: 15px;
+  background-color: black;
+}
+
+.videoPlayerCloseBtn {
+  align-self: flex-start;
+  position: absolute;
+  bottom: 5px;
+  background-color: rgb(141, 138, 138);
+  border: none;
+  padding: 0 40px 0 40px;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.videoPlayerCloseBtn:hover {
+  background-color: rgba(172, 255, 47, 0.673);
+}
+
+@media (min-width: 540px) {
+  .videoModal {
+    width: 30%;
+    height: 30%;
+  }
+}
+@media (min-width: 768px) {
+  .videoModal {
+    width: 35%;
+    height: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .videoModal {
+    width: 50%;
+    height: 50%;
+  }
+}

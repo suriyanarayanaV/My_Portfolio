@@ -23,7 +23,7 @@ const Skills = () => {
         <Title>Skills</Title>
         <Desc>
           Here are some of my skills on which I have been working on for the
-          past 2 years.
+          past 2.5 years.
         </Desc>
         <Fade direction={"right"} duration={2000}>
           <Subtitle>Full Stack Development</Subtitle>
