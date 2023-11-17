@@ -225,13 +225,13 @@ export const projects = [
   },
   {
     title: "Health Habitat and Tracker",
-    desc: `Shealth 360 is a sophisticated task management application designed for seamless collaboration and efficient project execution. Built using a powerful tech stack including React, Next.js, Node.js, Express, MongoDB, Firebase, and Material-UI, this application redefines the way teams organize and accomplish tasks.`,
+    desc: `Shealth360 is a robust health management app engineered to enhance users well-being. Seamlessly integrated features include personalized water and food reminders, allowing users to effortlessly log daily intake directly through notifications. The app boasts a dynamic steps counter and a nutrition tracker that intelligently calculates calories and nutritional details based on user-inputted food data.Also the app will show Daily, weekly, and monthly reports for holistic progress insights, offering a comprehensive overview of users health journey.`,
     img: "",
     techs: ["React", "React Native", "Node JS", "Express JS", "VS Code"],
     demo: "",
     git: "",
     video:"https://firebasestorage.googleapis.com/v0/b/portfolio-503c4.appspot.com/o/Shealth360Docs%2FVideos%2FScreen_Recording_20231114_002027_shealth360_720x1600.mp4?alt=media&token=a28e66f1-07c4-40a0-9bd8-63cc5d77db61" ,
-    getApp: "hfj",
+    getApp: "",
   },
   {
     title: "Automation Project",
