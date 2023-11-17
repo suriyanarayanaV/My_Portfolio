@@ -112,26 +112,25 @@ const Projects = () => {
                     onClick={() => {
                       setShowVidePlayer(project.video);
                     }}
+                    style={{
+                      textDecoration: "none",
+                      fontSize: "18px",
+                      color: "#b778c3",
+                    }}
                   >
-                    <a
-                      style={{
-                        textDecoration: "none",
-                        fontSize: "18px",
-                        color: "#b778c3",
-                      }}
-                    >
-                      View App
-                    </a>
+                    View App
                   </Button>
                 )}
                 {project.getApp && (
-                  <Button size="large">
-                    <a
-                      href={project.getApp}
-                      style={{ textDecoration: "none", fontSize: "18px" }}
-                    >
-                      Get App
-                    </a>
+                  <Button
+                    size="large"
+                    style={{
+                      textDecoration: "none",
+                      fontSize: "18px",
+                      color: "#b778c3",
+                    }}
+                  >
+                    Get App
                   </Button>
                 )}
                 {project.git && <Button size="small">Source Code</Button>}
