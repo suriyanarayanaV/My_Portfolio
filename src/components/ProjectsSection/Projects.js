@@ -16,7 +16,7 @@ import { Fade } from "react-awesome-reveal";
 import VideoPlayer from "../videoComponent/VideoPlayer";
 const Projects = () => {
   const [showVidePlayer, setShowVidePlayer] = React.useState(false);
-  const [video, setVideo] = React.useState("");
+
   return (
     <ProjectsContainer id="projects">
       <Wrapper>
@@ -41,6 +41,7 @@ const Projects = () => {
                 padding: "20px",
                 borderRadius: "10px",
                 boxShadow: "0 0 16px 2px rgba(0,0,0,0.3)",
+                justifyContent: "center",
               }}
             >
               <CardContent>
@@ -95,7 +96,11 @@ const Projects = () => {
                   <Button size="large">
                     <a
                       href={project.demo}
-                      style={{ textDecoration: "none", fontSize: "18px" }}
+                      style={{
+                        textDecoration: "none",
+                        fontSize: "18px",
+                        color: "#b778c3",
+                      }}
                     >
                       View App
                     </a>
@@ -105,11 +110,18 @@ const Projects = () => {
                   <Button
                     size="large"
                     onClick={() => {
-                      setVideo(project.video);
-                      setShowVidePlayer(true);
+                      setShowVidePlayer(project.video);
                     }}
                   >
-                    View App
+                    <a
+                      style={{
+                        textDecoration: "none",
+                        fontSize: "18px",
+                        color: "#b778c3",
+                      }}
+                    >
+                      View App
+                    </a>
                   </Button>
                 )}
                 {project.getApp && (
@@ -124,16 +136,18 @@ const Projects = () => {
                 )}
                 {project.git && <Button size="small">Source Code</Button>}
               </CardActions>
+
+              {project.video && showVidePlayer === project.video && (
+                <VideoPlayer
+                  id="videoPlayer"
+                  hide={() => {
+                    setShowVidePlayer("");
+                  }}
+                  src={project.video}
+                />
+              )}
             </Card>
           ))}
-          {showVidePlayer && (
-            <VideoPlayer
-              hide={() => {
-                setShowVidePlayer(false);
-              }}
-              src={video}
-            />
-          )}
         </Body>
       </Wrapper>
     </ProjectsContainer>
