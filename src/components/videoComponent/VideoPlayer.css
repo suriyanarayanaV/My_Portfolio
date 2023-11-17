@@ -26,16 +26,17 @@
   align-self: flex-start;
   position: absolute;
   bottom: 5px;
-  background-color: rgb(141, 138, 138);
+  background-color: rgba(172, 255, 47, 0.673);
   border: none;
   padding: 7px 50px 7px 50px;
   color: white;
+  font-weight: bolder;
   border-radius: 15px;
   cursor: pointer;
 }
 
 .videoPlayerCloseBtn:hover {
-  background-color: rgba(172, 255, 47, 0.673);
+  background-color: rgb(153, 248, 9);
 }
 
 @media (min-width: 540px) {
