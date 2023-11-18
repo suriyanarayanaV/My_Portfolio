@@ -37,12 +37,6 @@
   background-color: rgb(153, 248, 9);
 }
 
-@media (min-width: 360px) {
-  .videoModal {
-    height: 26%;
-  }
-}
-
 @media (min-width: 540px) {
   .videoModal {
     height: 30%;
