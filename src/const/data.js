@@ -225,7 +225,7 @@ export const projects = [
   },
   {
     title: "Health Habitat and Tracker",
-    desc: `Shealth360 is a robust health management app engineered to enhance users well-being. Seamlessly integrated features include personalized water and food reminders, allowing users to effortlessly log daily intake directly through notifications. The app boasts a dynamic steps counter and a nutrition tracker that intelligently calculates calories and nutritional details based on user-inputted food data.Also the app will show Daily, weekly, and monthly reports for holistic progress insights, offering a comprehensive overview of users health journey.`,
+    desc: `Shealth360 is a robust health management android app engineered to enhance users well-being. Seamlessly integrated features include personalized water and food reminders, allowing users to effortlessly log daily intake directly through notifications. The app boasts a dynamic steps counter and a nutrition tracker that intelligently calculates calories and nutritional details based on user-inputted food data.Also the app will show Daily, weekly, and monthly reports for holistic progress insights, offering a comprehensive overview of users health journey.`,
     img: "",
     techs: ["React", "React Native", "Node JS", "Express JS", "VS Code"],
     demo: "",
