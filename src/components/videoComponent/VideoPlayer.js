@@ -6,7 +6,7 @@ const VideoPlayer = (props) => {
       <div className="cameraHole" />
       <video
         width={
-          (dimensions.width < 540 && "55%") ||
+          (dimensions.width < 540 && "60%") ||
           (dimensions.width >= 540 && "30%")
         }
         controls
