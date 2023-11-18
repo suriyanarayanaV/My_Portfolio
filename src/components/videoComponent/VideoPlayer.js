@@ -1,7 +1,5 @@
-import { useState } from "react";
 import "./VideoPlayer.css";
 const VideoPlayer = (props) => {
-  const [load, setlad] = useState(false);
   return (
     <div className="videoModal">
       <div className="cameraHole" />
