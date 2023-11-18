@@ -1,4 +1,3 @@
-import { useLayoutEffect, useState } from "react";
 import "./VideoPlayer.css";
 const VideoPlayer = (props) => {
   const dimensions = { width: window.innerWidth };
@@ -7,7 +6,7 @@ const VideoPlayer = (props) => {
       <div className="cameraHole" />
       <video
         width={
-          (dimensions.width < 540 && "50%") ||
+          (dimensions.width < 540 && "55%") ||
           (dimensions.width >= 540 && "30%")
         }
         controls
