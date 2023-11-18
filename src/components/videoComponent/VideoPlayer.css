@@ -2,8 +2,6 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 26%;
-  height: 26%;
 }
 
 .cameraHole {
@@ -39,21 +37,24 @@
   background-color: rgb(153, 248, 9);
 }
 
+@media (min-width: 360px) {
+  .videoModal {
+    height: 26%;
+  }
+}
+
 @media (min-width: 540px) {
   .videoModal {
-    width: 30%;
     height: 30%;
   }
 }
 @media (min-width: 768px) {
   .videoModal {
-    width: 35%;
     height: 35%;
   }
 }
 @media (min-width: 1024px) {
   .videoModal {
-    width: 45%;
     height: 45%;
   }
 }
